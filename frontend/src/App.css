@@ -1,0 +1,41 @@
+.main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.dp {
+  padding-top: 5px;
+}
+.chatpane {
+  margin-top: 40px;
+  position: relative;
+  margin-bottom: 100px;
+  min-height: fit-content;
+  overflow-x: hidden;
+}
+
+.pinned-nav {
+  z-index: 20;
+  position: fixed !important;
+
+  height: fit-content;
+}
+.chat-input {
+  position: fixed !important;
+  bottom: 0;
+  background-color: #e7eaed;
+  height: min-content;
+  opacity: 0.9;
+}
+.send {
+  position: fixed;
+  background-color: #e7eaed;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+.send:hover {
+  background-color: #e7eaed;
+}
+.text-pane {
+  overflow-wrap: break-word;
+}
