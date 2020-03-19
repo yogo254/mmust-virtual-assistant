@@ -6,6 +6,8 @@
 /keys
 .pnp.js
 
+.model.nlp
+
 # testing
 /coverage
 
