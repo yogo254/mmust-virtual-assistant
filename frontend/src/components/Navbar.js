@@ -13,8 +13,8 @@ const Navbar = () => {
             className="circle "
           />
         </div>
-        <div className="center">
-          <h5 className="white-text">MMUST Assistant</h5>
+        <div>
+          <h5 className="white-text">MMUST Alita</h5>
         </div>
       </div>
     </div>

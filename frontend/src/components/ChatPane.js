@@ -3,8 +3,6 @@ import { connect } from "react-redux";
 import CalloutReceive from "./CalloutReceive";
 import CalloutSend from "./CalloutSend";
 import { hideInputPane } from "../actions/MainPane";
-import kafka from "kafka-node";
-const client = new kafka.KafkaClient({ kafkaHost: "localhost:9092" });
 
 const ChatPane = ({ msgs, hideInputPane }) => {
   return (

@@ -7,6 +7,16 @@ import $ from "jquery";
 
 const ChatInput = ({ addMessage, hide }) => {
   let message = "";
+  let sendMessage = () => {
+    addMessage({
+      id: uuid(),
+      contentType: "text",
+      owner: "user",
+      content: message
+    });
+    $(".materialize-textarea").val("");
+    $(".materialize-textarea").attr("style", "height:43px");
+  };
   return (
     <div className="row">
       {!hide ? (
@@ -15,20 +25,13 @@ const ChatInput = ({ addMessage, hide }) => {
             <form
               onSubmit={e => {
                 e.preventDefault();
-                addMessage({
-                  id: uuid(),
-                  contentType: "text",
-                  owner: "user",
-                  content: message
-                });
-                $(".materialize-textarea").val("");
-                $(".materialize-textarea").attr("style", "height:43px");
+                sendMessage();
               }}
             >
               <Textarea
                 label="Enter text message"
                 s={10}
-                data-length={300}
+                data-length={30}
                 error={"maximum digit counts exceeded!"}
                 validate={true}
                 onChange={e => {
@@ -36,7 +39,7 @@ const ChatInput = ({ addMessage, hide }) => {
                 }}
               />
               <button type="submit" className="btn-small btn-flat  send ">
-                <i className="fa fa-lg fa-paper-plane blue-text "></i> send
+                <i className="fa fa-lg fa-paper-plane blue-text "></i>
               </button>
             </form>
           </div>

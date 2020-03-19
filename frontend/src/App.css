@@ -2,9 +2,13 @@
   max-width: 100%;
   overflow-x: hidden;
 }
+.callout-footer {
+  font-size: x-small;
+}
 
 .dp {
   padding-top: 5px;
+  margin-right: 20px;
 }
 .chatpane {
   margin-top: 40px;
@@ -19,6 +23,7 @@
   position: fixed !important;
 
   height: fit-content;
+  border-radius: 15px;
 }
 .chat-input {
   position: fixed !important;
@@ -26,6 +31,7 @@
   background-color: #e7eaed;
   height: min-content;
   opacity: 0.9;
+  border-radius: 10px;
 }
 .send {
   position: fixed;

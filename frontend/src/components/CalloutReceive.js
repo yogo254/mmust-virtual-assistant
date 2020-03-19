@@ -1,9 +1,11 @@
 import React from "react";
+import moment from "moment";
 
 const CalloutReceive = ({ content }) => {
   return (
     <div className=" callout callout-receive callout-right text-pane">
-      <span> {content}</span>
+      <p> {content}</p>
+      <span className="right  callout-footer">{`Alita ${moment().fromNow()}`}</span>
     </div>
   );
 };

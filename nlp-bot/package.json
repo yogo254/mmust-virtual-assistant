@@ -1,14 +1,16 @@
 {
-  "name": "web-socket-service",
+  "name": "nlp-bot",
   "version": "1.0.0",
-  "description": "web-socket services",
-  "main": "server.js",
+  "description": "nlp js sample bot",
+  "main": "index.js",
   "author": "yogo254",
   "license": "MIT",
   "dependencies": {
+    "@nlpjs/basic": "^4.2.1",
+    "@nlpjs/lang-es": "^4.1.4",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "uuid": "^7.0.1"
+    "uuid": "^3.3.3"
   }
 }
