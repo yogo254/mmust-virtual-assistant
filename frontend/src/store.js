@@ -11,7 +11,7 @@ const middleware = [thunk];
 const persistConfig = {
   key: "mmustassistant",
   storage,
-  whitelist: ["mainPane"]
+  whitelist: ["mainPane,token"]
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

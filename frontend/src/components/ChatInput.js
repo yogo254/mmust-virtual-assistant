@@ -2,21 +2,31 @@ import React from "react";
 import { Textarea } from "react-materialize";
 import { connect } from "react-redux";
 import { addMessage } from "../actions/Message";
+import { getToken } from "../actions/Token";
+
 import uuid from "uuid/v4";
 import $ from "jquery";
 
-const ChatInput = ({ addMessage, hide }) => {
+const ChatInput = ({ addMessage, hide, token, getToken }) => {
   let message = "";
+
+  if (token === "") getToken();
   let sendMessage = () => {
-    addMessage({
-      id: uuid(),
-      contentType: "text",
-      owner: "user",
-      content: message
-    });
+    if (message !== "")
+      addMessage(
+        {
+          id: uuid(),
+          contentType: "text",
+          owner: "user",
+          content: message
+        },
+        token
+      );
+
     $(".materialize-textarea").val("");
     $(".materialize-textarea").attr("style", "height:43px");
   };
+
   return (
     <div className="row">
       {!hide ? (
@@ -49,6 +59,7 @@ const ChatInput = ({ addMessage, hide }) => {
   );
 };
 const mapStateToProps = state => ({
-  hide: state.mainPane.hide
+  hide: state.mainPane.hide,
+  token: state.token
 });
-export default connect(mapStateToProps, { addMessage })(ChatInput);
+export default connect(mapStateToProps, { addMessage, getToken })(ChatInput);
