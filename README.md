@@ -9,4 +9,5 @@ university to automated various services i.e frequently asked questions and impr
 * Mongo db
 * React
 * Node NLP
+* Microsoft Azure Text to Speech
 * Express js
