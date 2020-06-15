@@ -7,7 +7,7 @@
       "autoLoad": true,
       "autoSave": true,
       "modelFileName": "model.nlp",
-      "corpora": ["./corpus/corpus.json"]
+      "corpora": ["./corpus/faqcorpus.json", "./corpus/corpus.json"]
     }
   },
   "use": ["Basic", "LangEs"]

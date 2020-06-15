@@ -1,0 +1,220 @@
+{
+  "name": "mmust frequntly asked questions corpus",
+  "locale": "en-US",
+  "data": [
+    {
+      "intent": "accomodation.fee.value",
+      "utterances": [
+        "How Much Is The Accomodation Fee?",
+        "Accomodation fee?",
+        "what is the accomodation fee?",
+        "How much do I pay for accomodation?",
+        "what is the accomodation cost?",
+        "cost of accomodation",
+        "how much is the acccomodation payment",
+        "How Much Is The hostel Fee?",
+        "hostel fee?",
+        "what is the hostel fee?",
+        "How much do I pay for hostel?",
+        "what is the hostel cost?",
+        "cost of hostel",
+        "how much is the hostel payment"
+      ],
+      "answers": [
+        "The University accommodation fee ranges from Kshs 5000/- to Kshs 8000/- depending on the number of beds per room per semester."
+      ]
+    },
+    {
+      "intent": "accomodation.psspjab.value.same",
+      "utterances": [
+        "Do PSSP and Jab Students Pay The Same Accomodation Fee?",
+        "Do PSSP pay the same ammount for accommodation as JAB?",
+        "JAB and PSSP pay the same accomodation fees",
+        "Do private sponsored students pay the same ammount as the goverment sponsored students?"
+      ],
+      "answers": [
+        "Yes. Both the privately sponsored and the government sponsored students pay the same accommodation fee."
+      ]
+    },
+    {
+      "intent": "accomodation.eligible",
+      "utterances": [
+        "Who Is Eligible To Apply For A Hostel?",
+        "Who can have an hostel",
+        "which student can have hostels",
+        "who can apply for hostel online",
+        "who can book hostel online"
+      ],
+      "answers": [
+        "The University provides an online platform where ONLY FIRST YEARS can login and book for accommodation."
+      ]
+    },
+    {
+      "intent": "accomodation.private.monitor",
+      "utterances": [
+        "Does The University Monitor The Private Rented Accommodation It Advertises To Its Students?",
+        "does the university monitor private rented accommodation",
+        "does the univaersity monitor private hostels",
+        "does university controls the private hostels",
+        "are the adverised hostels safe",
+        "are non-residence hostels safe",
+        "does privete hostels offer condusive enviroment",
+        "are private hostels clean",
+        "what measures does the university take against private hostels"
+      ],
+      "answer": [
+        "Yes. The University oversees all the private hostels to ensure that they provide a conducive environment for students in terms of security, cleanliness and other general aspects before we allow them to advertise to our students."
+      ]
+    },
+    {
+      "intent": "support.student.work",
+      "utterances": [
+        "What support does the University offer to ensure that students get work?",
+        "Does univeristy surport students to get work",
+        "Do I get work after completing a course",
+        "do I get work after study",
+        "Does the university offer work to students",
+        "how do mmust students get work",
+        "Am I in a position of getting work after completing a course"
+      ],
+      "answer": [
+        "Employability is embedded into the wide range of degree courses provided by the University. We also have a Directorate of Career Services which provides support with job application. MMUST provides its students with all that they require to enter the world of work."
+      ]
+    },
+    {
+      "intent": "library.allowed",
+      "utterances": [
+        "Who can use the University Library?",
+        "can I use the library",
+        "who can use the library",
+        "who is allowed into the library",
+        "who can enter the library",
+        "who has access to the library",
+        "who is allowed access to the library",
+        "is library open to everyone"
+      ],
+      "answer": [
+        "The teaching, non-teaching and students are the bona fide members who have a right to read and borrow academic material from the University Library."
+      ]
+    },
+    {
+      "intent": "exam.take.allowed",
+      "utterances": [
+        "Who qualifies to sit for University Examinations?",
+        "Who can sit for exam",
+        "Who can take the exams",
+        "Who is allowed to sit for exams",
+        "who is allowed to take exams",
+        "Can anyone take the exams",
+        "Can everyone take the exams",
+        "Is exam for everyone"
+      ],
+      "answer": [
+        "Only bona fide students are allowed to sit for University examinations. These are students who have paid fees in full and have reported online and registered for the prescribed semester courses."
+      ]
+    },
+    {
+      "intent": "course.parttime.offer",
+      "utterances": [
+        "Does the University offer Part Time Courses?",
+        "does mmust offer part time courses",
+        "do you offer part time courses",
+        "are there part time courses at mmust",
+        "can mmust offer part time course"
+      ],
+      "answers": [
+        "Yes. Part time courses are mostly available in post graduate programmes. Different Schools provide different schedules for part time courses depending on the preferences of the students."
+      ]
+    },
+    {
+      "intent": "calender.date.key",
+      "utterances": [
+        "What are the Key Dates in the University Academic Calendar?",
+        "key dates in the university calender",
+        "what are the key dates in the university calender",
+        "what are the key dates in the university calender",
+        "Are there key dates in the university academic calender",
+        "academic calender key dates"
+      ],
+      "answers": [
+        "We have in-takes in January, May and September of each year. Graduation is normally conducted in December and only on special occasion can it be conducted in July. KUCCPS students are enrolled between August and September of each year. Students go for long holidays between May and September."
+      ]
+    },
+    {
+      "intent": "course.application.reply",
+      "utterances": [
+        "How long does it take to get a reply after a Successful Course Application",
+        "How long does the reply to a course application take",
+        "Duration for before a course application reply"
+      ],
+      "answers": ["A maximum of 14 working days."]
+    },
+    {
+      "intent": "exam.transcript.pick",
+      "utterances": [
+        "Where should the students pick their transcripts",
+        "Where can i pick my transcript",
+        "where are transcript picked"
+      ],
+      "answers": [
+        "School level provisional results are picked at the various Schools whereas official transcripts are picked from the Office of the Registrar (Academic Affairs.)"
+      ]
+    },
+    {
+      "intent": "university.talent.schoolarship",
+      "utterances": [
+        "What Is The MMUST Talent Scholarship",
+        "mmust talent scholarship",
+        "Tell me about mmust talent scholarship",
+        "what about mmust talent scholarship"
+      ],
+      "answers": [
+        "This is an initiative by the University to give back to the society through providing sponsorship to the talented students in the various sports and entertainment programmes."
+      ]
+    },
+    {
+      "intent": "university.international.student.admit",
+      "utterances": [
+        "Does the University admit International Students",
+        "Do you accept international students",
+        "Am a foreign student.Can i be admited"
+      ],
+      "answer": [
+        "Yes. The University does admit qualified International students who have applied and have their certificates equated with the Kenyan education system, that is, Commission for University Education (CUE), Kenya National Examination Council (KNEC) and Kenya National Qualifications Authority (KNQA)."
+      ]
+    },
+    {
+      "intent": "course.short.offer",
+      "utterances": [
+        "Does The University offer Short and Bridging Courses",
+        "does university offer short courses",
+        "Do you offer short courses",
+        "can i take short courses",
+        "I want to take a short course"
+      ],
+      "answers": [
+        "The University offers short courses ranging from 5 days - 4 months. Currently, we do not provide bridging programmes."
+      ]
+    },
+    {
+      "intent": "university.schoolarship.offer",
+      "utterances": [
+        "Does the University provide Scholarships to Students?",
+        "Do you offer scholarships"
+      ],
+      "answers": [
+        "Yes. Masters and PhD students are allowed to teach some units within the University. The stipend they receive is used to cater for their academic requirements."
+      ]
+    },
+    {
+      "intent": "university.internship",
+      "answers": [
+        "The University provides internship opportunities to its alumni only. Conversely, for courses not offered at the University, we recruit the most competent interns from other universities."
+      ],
+      "utterances": [
+        "Who is eligible to apply for Internship at the University",
+        "who can apply for an internship at the university"
+      ]
+    }
+  ]
+}
