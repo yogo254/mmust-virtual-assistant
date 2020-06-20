@@ -3,6 +3,16 @@
   "locale": "en-US",
   "data": [
     {
+      "intent": "fee.bank.accounts",
+      "utterances": [
+        "What Is The Fee Payment Mode?",
+        "how can i pay my fees",
+        "what are the university bank accounts",
+        "where do i pay the school fees"
+      ],
+      "answers": ["Fees is paid Into the following University Accounts:"]
+    },
+    {
       "intent": "accomodation.fee.value",
       "utterances": [
         "How Much Is The Accomodation Fee?",

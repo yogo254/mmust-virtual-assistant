@@ -1,6 +1,8 @@
 const express = require("express");
 
 const uuid = require("uuid/v4");
+const serverAddress = "http://localhost:8080";
+const axios = require("axios");
 
 const router = express.Router();
 const { dockStart } = require("@nlpjs/basic");
@@ -17,6 +19,7 @@ let nlp;
 router.post("/", async (req, res) => {
   let { content, contentType } = req.body;
   let responce = await nlp.process("en", content);
+
   let msg = {
     id: uuid(),
     contentType,
@@ -25,7 +28,26 @@ router.post("/", async (req, res) => {
     topic: "livebot"
   };
 
-  res.status(200).json(msg);
+  switch (responce.intent) {
+    case "fee.bank.accounts": {
+      axios
+        .get(`${serverAddress}/api/faq/intent/${responce.intent}`)
+        .then(r => {
+          let question = r.data[0];
+          msg.responceObject = question.answerObjects;
+
+          res.status(200).json(msg);
+        });
+
+      break;
+    }
+
+    default: {
+      msg.responceObject = [];
+      res.status(200).json(msg);
+      break;
+    }
+  }
 });
 
 module.exports = router;

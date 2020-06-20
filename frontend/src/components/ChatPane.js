@@ -15,7 +15,14 @@ const ChatPane = ({ msgs, hideInputPane }) => {
           if (m.contentType === "text") {
             if (m.owner === "user")
               return <CalloutSend key={m.id} content={m.content} />;
-            else return <CalloutReceive key={m.id} content={m.content} />;
+            else
+              return (
+                <CalloutReceive
+                  key={m.id}
+                  content={m.content}
+                  responceObject={m.responceObject}
+                />
+              );
           }
         })}
       </div>
